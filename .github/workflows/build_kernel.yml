@@ -22,7 +22,7 @@ jobs:
       KERNEL_CMDLINE: "ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- O=out"
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/runner-images
       with:
         submodules: 'true'
         fetch-depth: 100
