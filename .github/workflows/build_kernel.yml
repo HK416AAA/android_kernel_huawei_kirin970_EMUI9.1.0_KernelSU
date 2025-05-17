@@ -53,6 +53,7 @@ jobs:
        rm -rf KernelSU
        rm -rf drivers/kernelsu
        curl -LSs "curl -LSs "https://raw.githubusercontent.com/ShirkNeko/SukiSU-Ultra/main/kernel/setup.sh" | bash -s nongki" | bash -
+       curl -LSs "https://raw.githubusercontent.com/ShirkNeko/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-dev
        export PATH=$(pwd)/aarch64-linux-android-4.9/bin/:$PATH
        export ARCH=arm64
        export SUBARCH=arm64
